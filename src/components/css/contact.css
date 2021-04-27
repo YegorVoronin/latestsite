@@ -1,0 +1,98 @@
+.contact{
+    /* height: 74vh; */
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+.statement{
+    display: flex;
+    color: #AFAFAF;
+    font-size: 22px;
+    margin: 15px;
+}
+.myEmail{
+    margin-left: 5px;
+    color: #7B7B7B;
+    font-weight: 900;
+    transition-duration: 250ms;
+    user-select: text; /* supported by Chrome and Opera */
+    -webkit-user-select:text; /* Safari */
+    -khtml-user-select: text; /* Konqueror HTML */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+}
+.error{
+    color: crimson;
+}
+.confirm{
+    color: #AFAFAF;
+    font-size: 25px;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    flex-direction: column;
+    color: #AFAFAF;
+    align-items: center;
+    padding: 10px;
+}
+label{
+    margin: 10px;
+    font-size: 20px;
+}
+input{
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+    background-color: #c5c5c5;
+    text-align: center;
+}
+input::placeholder{
+    color: #8b8b8b;
+}
+input:focus{
+    outline: none;
+    background-color: #dddddd;
+}
+textarea{
+    background-color: #c5c5c5;
+    padding: 3px;
+    width: 100%;
+}
+textarea:focus{
+    outline: none;
+    background-color: #dddddd;
+}
+.sendBTN{
+    margin-top: 10px;
+    padding: 110px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #AFAFAF;
+    background-color: #191919;
+    border: 1px solid #AFAFAF;
+    cursor: pointer;
+    transition-duration: 250ms;
+    font-size: 20px;
+}
+.sendBTN:hover{
+    background-color: #AFAFAF;
+    color: #191919;
+}
+@media only screen and (max-width: 900px){
+    .statement{
+        font-size: 18px;
+        flex-direction: column;
+        text-align: center;
+    }
+    input{
+        width: 310px;
+    }
+}

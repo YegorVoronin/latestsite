@@ -1,0 +1,104 @@
+.main-nav{
+    background-color: #191919;
+    color: #AFAFAF;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.logo{
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.logo:hover{
+    color: ivory;
+    transition-duration: 250ms;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    list-style-type: none;  
+}
+.links li{
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+.links li:hover{
+    color: ivory;
+}
+.burger {
+    display: none;
+}
+.slideNav{
+    background-color: #191919;
+    color: #AFAFAF;
+    border-top: 1px solid #AFAFAF;
+    height: 84vh;
+    position: fixed;
+    display: none;
+    z-index: 10;
+    transition-duration: 250ms;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.slideNav ul{
+    list-style-type: none;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+}
+.router-links{
+    text-decoration: none;
+    color:#AFAFAF;
+}
+.router-links:hover{
+    color: ivory;
+    transition-duration: 250ms;
+}
+.github-nav{
+    transition-duration: 250ms;
+    font-size: 50px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+    .main-nav{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 35px;
+        width: 50px;
+        cursor: pointer;
+    }
+    .burger div{
+        background-color: #AFAFAF;
+        border-radius: 25px;
+        height: 4.5px;
+        width: 100%; 
+        position: relative;
+        transition-duration: 250ms;
+    }
+    .links{
+        display: none;
+    }
+    .slideNav{
+        display: flex;
+    }
+  }
+  /* @media only screen and (min-height: 800px){
+    .main-nav{
+        background-color: lawngreen;
+    }
+} */

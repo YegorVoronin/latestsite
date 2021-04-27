@@ -1,0 +1,101 @@
+.projects{
+    display: flex;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.items{
+    height: 60vh;
+    width: 60vh;
+    margin: 30px;
+    border-radius: 100%;
+    transition-duration: 250ms;
+    cursor: pointer;
+    border: 3px solid #AFAFAF;
+    background-color: #AFAFAF;
+    overflow: hidden;
+    font-size: 1.5vw;
+    color: #191919;
+}
+.items div{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    transition-duration: 150ms;
+}
+#margin{
+    margin: 10px;
+}
+#link{
+    margin-right: 8px;
+}
+.cover {
+    background-position: center center;
+    background-size: 100%;
+    transition-duration: 250ms;
+    height: 100%;
+    width: 100%;
+}
+#revelar{
+    background-image: url('../images/revelar.JPG');
+}
+#prostore{
+    background-image: url('../images/proStore.JPG');
+}
+#chat{
+    background-image: url('../images/slide1.jpg');
+}
+#xp{
+    background-image: url('../images/xp.jpg');
+    background-repeat: no-repeat;
+}
+.cover:hover{
+    opacity: .5;
+}
+.title{
+    font-size: 2.2vw;
+    align-items: center;
+    justify-content: center;
+}
+.code:hover, .app:hover{
+    color:  #5e5e5e;
+}
+.desc{
+    border-top: 1px solid #191919;
+    font-size: 1.5vw;
+    padding-top: 5px;
+}
+.html{
+    color: #F06529;
+}
+.css{
+    color: #2965F1;
+}
+.js{
+    color: #F0DB4F;
+}
+.react{
+    color: #61dbfb;
+}
+@media only screen and (max-width: 800px){
+    .row{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 8vw;
+    }
+    .items{
+        width: 95%;
+        height: 50vh;
+        font-size: 6.5vw;
+    }
+    .desc{
+        font-size: 4vw;
+    }
+}

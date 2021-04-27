@@ -1,0 +1,26 @@
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #191919;
+    color: #AFAFAF;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+} 
+.github-footer{
+    transition-duration: 250ms;
+    font-size: 35px;
+    cursor: pointer;
+}
+.github-footer:hover{
+    color: ivory;
+}
+@media only screen and (max-width: 800px){
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
